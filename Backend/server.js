@@ -12,7 +12,7 @@ DBPASSWORD
 } = process.env
 
 server.use(cors());
-server.use(morgan('combined'));
+server.use(morgan('tiny'));
 
 server.use(bodyParser.json());
 
