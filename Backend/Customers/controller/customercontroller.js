@@ -1,6 +1,6 @@
 const Customer =  require('../models/customerModel');
 
-const createCustomer = (req,res) => {
+const createCustomer = (req, res) => {
     const customerInfo = req.body;
     const customer = new Customer(customerInfo);
     customer.save()
@@ -23,7 +23,7 @@ const createCustomer = (req,res) => {
       })
   }
 
-  const getCustomer = (req,res) => {
+  const getCustomer = (req, res) => {
     const { id } = req.params;
     Customer.findById(id)
     .then((customer) => {
