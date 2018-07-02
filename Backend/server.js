@@ -19,7 +19,7 @@ server.use(bodyParser.json());
 /*            -------------Routes------------------           */
 
 server.get('/', (req, res) => {
-	res.status(200).json({message: 'welcome'})
+	res.status(200).json({message: 'welcome to Tailor-Aid'})
 })
 
 // This runs all the customer related routes
